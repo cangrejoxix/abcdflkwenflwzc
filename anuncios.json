@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "ultima_actualizacion": "2026-07-23",
+  "anuncios": [
+    {
+      "id": "ADV-001",
+      "activo": true,
+      "patrocinador": "Nombre del Patrocinador",
+      "descripcion": "Descripcion del anuncio aqui",
+      "url_video": "https://TU-CUENTA.r2.cloudflarestorage.com/gonty-assets/videos/video_ad.mp4",
+      "url_imagen": "https://TU-CUENTA.r2.cloudflarestorage.com/gonty-assets/imagenes/banner_ad.jpg",
+      "url_plataforma": "https://url-del-patrocinador.com",
+      "url_redes": "https://instagram.com/patrocinador",
+      "fecha_inicio": "2026-07-01",
+      "fecha_fin": "2026-08-01"
+    }
+  ]
+}
