@@ -4,15 +4,15 @@
 
 ### Agregar Anuncio Nuevo
 
-1. **Sube archivos a Cloudflare R2**
-   - Sube la imagen/banner a `gonty-assets/imagenes/`
-   - Sube el video (si aplica) a `gonty-assets/videos/`
-   - Copia las URLs de R2
+1. **Sube el video a Odysee**
+   - Ve a https://odysee.com/$/upload
+   - Sube tu video
+   - Copia la URL del video publicado
 
 2. **Edita anuncios.json**
    - Abre `anuncios.json`
    - Copia el bloque de ejemplo
-   - Pega las URLs de R2
+   - Pega la URL de Odysee en `url_video`
    - Cambia los datos del patrocinador
    - Cambia `activo` a `true`
 
@@ -43,8 +43,8 @@
   "activo": true,            // true = se muestra, false = no se muestra
   "patrocinador": "Nombre",  // Nombre del negocio
   "descripcion": "Texto",    // Descripción del anuncio
-  "url_video": "https://...", // URL del video en R2
-  "url_imagen": "https://...", // URL de la imagen en R2
+  "url_video": "https://odysee.com/...", // URL del video en Odysee
+  "url_imagen": "https://...", // URL de la imagen (opcional)
   "url_plataforma": "https://...", // Link al sitio del patrocinador
   "url_redes": "https://...", // Link a redes sociales
   "fecha_inicio": "2026-07-01", // Cuándo empieza
@@ -52,17 +52,17 @@
 }
 ```
 
-## URLs de Cloudflare R2
+## Plataformas de Video
 
-- **Bucket:** `gonty-assets`
-- **Endpoint:** `https://TU-CUENTA.r2.cloudflarestorage.com`
-- **Estructura:**
-  - `gonty-assets/videos/` → Videos de anuncios
-  - `gonty-assets/imagenes/` → Imágenes/banners
+| Tipo de Video | Plataforma | Cuenta |
+|---|---|---|
+| Videos normales | YouTube | Anónima |
+| Videos polémicos/adultos | Odysee | Anónima |
 
 ## Notas Importantes
 
 - El JSON vive aquí (GitHub privado)
-- Los archivos pesados (videos/imagenes) viven en R2
-- La app lee el JSON vía Cloudflare Worker cada 7 días
+- Los videos viven en Odysee o YouTube
+- La app lee el JSON de GitHub cada 7 días
 - El usuario NUNCA necesita actualizar la APK
+- Para borrar un anuncio: cambia `activo` a `false`
