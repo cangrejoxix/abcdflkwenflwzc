@@ -3,8 +3,9 @@
     {
       "id": "feed-001",
       "activo": true,
-      "etiqueta": "peliculas",
-      "pelicula": "Terminator Génesis (2015)",
+      "etiqueta": "Pelicula",
+      "pelicula": "Terminator Génesis",
+      "simple": "Terminator",
       "descripcion": "ninguna",
       "url_video": "https://odysee.com/@zhets:c/multiverso-ia-ultra-realista-ultimo:e?r=7r2LX7gqTpfmzkvNKHXkKG11pzN2Tr9A",
       "url_imagen": "https://image.tmdb.org/t/p/w342/iy1AY6QYTomZLnMqEaUWPLZRcFg.jpg",
